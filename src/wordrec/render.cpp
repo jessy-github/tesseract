@@ -1,14 +1,8 @@
-/* -*-C-*-
- ********************************************************************************
+/******************************************************************************
  *
  * File:         render.cpp  (Formerly render.c)
  * Description:  Convert the various data type into line lists
  * Author:       Mark Seaman, OCR Technology
- * Created:      Fri Jul 28 13:14:48 1989
- * Modified:     Mon Jul 15 10:23:37 1991 (Mark Seaman) marks@hpgrlt
- * Language:     C
- * Package:      N/A
- * Status:       Experimental (Do Not Distribute)
  *
  * (c) Copyright 1989, Hewlett-Packard Company.
  ** Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,13 +15,11 @@
  ** See the License for the specific language governing permissions and
  ** limitations under the License.
  *
- *********************************************************************************/
+ *****************************************************************************/
 #include "render.h"
 #include "blobs.h"
 
 #include <cmath>
-
-#include "vecfuncs.h"
 
 // Include automatically generated configuration file if running autoconf.
 #ifdef HAVE_CONFIG_H
@@ -44,8 +36,6 @@ C_COL color_list[] = {
 };
 
 BOOL_VAR(wordrec_display_all_blobs, 0, "Display Blobs");
-
-BOOL_VAR(wordrec_display_all_words, 0, "Display Words");
 
 BOOL_VAR(wordrec_blob_pause, 0, "Blob pause");
 
